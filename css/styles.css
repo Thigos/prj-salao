@@ -10,6 +10,11 @@ html, body {
 
 @font-face {
     font-family: Poppins;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
     src: url(../fonts/Poppins-Regular.ttf);
 }
 
@@ -19,8 +24,34 @@ html, body {
 }
 
 p, label, h1, h2, h3, h4,h5 {
-    font-family: Poppins, Arial,Tahoma,sans-serif;
+    font-family: Poppins-Regular, Arial,Tahoma,sans-serif;
     
+}
+
+a{
+    font-family: Poppins, Arial,Tahoma,sans-serif;
+}
+
+.custom-bt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 33px;
+    transition: 500ms;
+}
+
+.custom-bt a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.custom-bt:hover{
+    transform: scale(1.05);
 }
 
 .custom-navbar{

@@ -3,10 +3,13 @@
     <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
             <a class="nav-link" href="index.php">Sobre o Salão </a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="index.php#servicos">Serviços </a>
         </li>
         <li class="nav-item active">
             <a class="nav-link" href="#">Galeria </a>

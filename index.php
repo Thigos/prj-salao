@@ -79,10 +79,26 @@
             }
           }
 
-
-
           .div-custom-card:hover{
             transform: scale(1.05);
+          }
+
+          .div-servicos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #00000049;
+            border-radius: 33px;
+          }
+
+          .div-serv-text{
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 10px;
+            margin-bottom: 50px;
           }
 
           
@@ -125,8 +141,18 @@
         </div>
       </div>
 
-      <div>
-        
+      <div class="div-servicos" id="servicos">
+        <div class="div-serv-text">
+          <h1 style="color: var(--secondary-color); font-size: 48px; font-family: Poppins-Medium;">Nossos Serviços</h1>
+          <h3>Feito pelas melhores equipes</h3>
+        </div>
+
+        <!--Serviços Cards-->
+
+        <?php 
+          include_once("cards.php");
+        ?>
+
       </div>
 
       <!--Footer-->
