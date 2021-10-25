@@ -1,0 +1,41 @@
+:root{
+    --primary-color: rgb(28,28,28); /*#1c1c1c*/
+    --secondary-color: rgb(0, 216, 108); /*#ff003a*/
+    --gradient: linear-gradient(318deg, var(--secondary-color) 0%, var(--primary-color) 35%);
+}
+
+html, body {
+    height: 100%;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+
+p, label, h1, h2, h3, h4,h5 {
+    font-family: Poppins, Arial,Tahoma,sans-serif;
+    
+}
+
+.custom-navbar{
+    z-index: 1;
+    height: 70px;
+    background: rgba(255, 0, 60, 0);
+    background: var(--gradient);
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    background-color: var(--primary-color);
+    height: 200px;
+    width: 100%;
+    padding: 50px 50px 50px 50px;
+}
