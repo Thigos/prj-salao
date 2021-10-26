@@ -12,10 +12,13 @@
             <a class="nav-link" href="formServico.php">Cadastrar Serviços </a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="#">Galeria </a>
+            <a class="nav-link" href="galeria-restrita.php">Galeria </a>
         </li>
         <li class="nav-item active">
             <a class="nav-link" href="#">Agenda</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Clientes</a>
         </li>
         <li class="nav-item active">
             <a class="nav-link" href="logout.php">Sair</a>
@@ -23,5 +26,5 @@
         </ul>
     </div>
 </nav>
-
-<script src="js/bootstrap.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>

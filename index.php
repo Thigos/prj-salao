@@ -11,6 +11,7 @@
         <style>
           .div-top-main {
             width: 100%;
+            max-height: 80%;
             height: 700px;
             display: flex;
             flex-direction: column;

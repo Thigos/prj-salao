@@ -15,7 +15,7 @@
             <a class="nav-link" href="#">Galeria </a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="#">Agenda</a>
+            <a class="nav-link" href="#">Chat</a>
         </li>
         <li class="nav-item active">
             <a class="nav-link" href="funcArea.php">Área do Funcionário</a>
@@ -23,5 +23,5 @@
         </ul>
     </div>
 </nav>
-
+<script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
