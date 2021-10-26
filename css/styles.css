@@ -33,6 +33,7 @@ a{
 }
 
 .custom-bt{
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,6 +43,7 @@ a{
     border: none;
     border-radius: 33px;
     transition: 500ms;
+    bottom: 10px;
 }
 
 .custom-bt a{

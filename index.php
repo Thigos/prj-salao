@@ -37,6 +37,7 @@
           }
 
           .div-linha{
+            position: relative;
             display: flex;
             justify-content: space-around;
             flex-direction: row;
@@ -44,6 +45,7 @@
             height: 400px;
             border-bottom: 1px solid #00000049;
             border-radius: 33px;
+            transition: 2s;
           }
 
           .div-linha-text{
@@ -64,6 +66,11 @@
             min-width: 350px;
             height: 350px;
             transition: 300ms;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 33px;
           }
 
           @media (max-width: 700px) {
@@ -121,23 +128,32 @@
         </div>
       </div>
 
-      <div class="div-linha">
+      <div class="div-linha" style="left: -100%;" id="l1">
         <div class="div-linha-text">
-          <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere aliquid, mollitia incidunt tempora, doloremque obcaecati architecto a qui esse voluptas ut consectetur delectus ad alias impedit odit unde, dolor quam.</h4>
+          <div style="display: flex; align-items: center;">
+            <h1 style="color: var(--secondary-color); font-size: 48px; font-family: Poppins;margin: 0px;">S L A</h1>
+            <div style="background-color: var(--secondary-color); width: 150px; height: 3px; margin-left: 30px;"></div>
+          </div>
+          
+          <h4>Um salão planejado para oferecer todos os serviços voltados à beleza e estética, feminina e masculina.</h4>
         </div>
         <div class="div-custom-card" 
           style="float: right; background-color: var(--secondary-color); box-shadow: -6px 9px 12px 0px var(--primary-color);">
-
+          <img style="border-radius: 33px;" src="img/salao.png" height="100%">
         </div>
       </div>
 
-      <div class="div-linha">
+      <div class="div-linha" style="left: -100%;" id="l2">
         <div class="div-custom-card" 
           style="float: left; background-color: var(--primary-color); box-shadow: -6px 9px 12px 0px var(--secondary-color);">
-
+          <img style="border-radius: 33px;" src="img/corte.png" height="100%">
         </div>
         <div class="div-linha-text">
-          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vitae cumque ipsam, quidem porro iste quisquam repudiandae, tempore odio perferendis provident rerum optio voluptas reprehenderit numquam quis sequi eaque magnam.</h4>
+          <div style="display: flex; align-items: center;">
+            <h1 style="color: var(--primary-color); font-size: 48px; font-family: Poppins;margin: 0px;">Diversos Serviços</h1>
+            <div style="background-color: var(--primary-color); width: 150px; height: 3px; margin-left: 30px;"></div>
+          </div>
+          <h4>Corte de Cabelo, Tratamento de Pele, Tratamento e Pintura de Unhas...</h4>
         </div>
       </div>
 
@@ -159,6 +175,22 @@
       <?php 
         include_once("footer.php");
       ?>
+
+      <script>
+        let l1 = document.getElementById("l1");
+        let l2 = document.getElementById("l2");
+
+        window.onscroll = function(){
+          if(window.scrollY >= (l1.scrollHeight) && l1.style.left != "0px"){
+            l1.style.left = 0;
+            //console.log("1")
+          }
+          if(window.scrollY >= (l2.scrollHeight) && l2.style.left != "0px"){
+            l2.style.left = 0;
+            //console.log("2")
+          }
+        }
+      </script>
 
     </body>
 </html>
