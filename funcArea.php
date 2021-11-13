@@ -116,7 +116,7 @@
     <body>
         <!--Navbar-->
         <?php 
-            include_once("navbar.php");
+            include_once("php_models/navbar.php");
 
         ?>
 

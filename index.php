@@ -117,7 +117,8 @@
       
       <!--Navbar-->
       <?php 
-        include_once("navbar.php");
+        include_once("php_models/navbar.php");
+        include_once("php_models/Cards.php")
       ?>
       
       <!--h80%-->
@@ -165,11 +166,14 @@
         </div>
 
         <!--Serviços Cards-->
-
-        <?php 
-          include_once("cards.php");
-        ?>
-
+        <div class="row">
+          <?php
+              //Cards::createCard("img Path", "Card Title", "Card Text", "Button Link", "Button Text");
+              Cards::createCard("img/corte.png", "Cortes e Penteados", "Descrição serviço", "#", "Agendar");
+              Cards::createCard("img/maquiagem.png", "Cortes e Penteados", "Descrição serviço", "#", "Agendar");
+              Cards::createCard("img/unha.png", "Pintura e Tratamento de Unhas", "Descrição serviço", "#", "Agendar");
+          ?>
+        </div>
       </div>
 
       <!--Footer-->

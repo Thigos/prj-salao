@@ -45,7 +45,7 @@
       
       <!--Navbar-->
       <?php 
-        include_once("navbar-restrita.php");
+        include_once("../php_models/navbar-restrita.php");
       ?>
       
       <!--h80%-->
