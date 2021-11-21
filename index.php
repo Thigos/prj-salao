@@ -125,7 +125,7 @@
       <div class="div-top-main" title="Imagem de himanshu gunarathna por Pixabay">
         <div class="div-top-img"> </div>
         <div class="div-top-text">
-          <h1 style="color: var(--secondary-color); font-size: 48px; font-family: Poppins-Medium;">Salão de beleza e estética</h1>
+          <h1 style="color: var(--secondary-color); font-size: 48px; font-weight: bold;">Salão de beleza e estética</h1>
           <h3>Serviços completo para a valorização da beleza dos nossos clientes</h3>
         </div>
       </div>
@@ -133,26 +133,26 @@
       <div class="div-linha" style="left: -100%;" id="l1">
         <div class="div-linha-text">
           <div style="display: flex; align-items: center;">
-            <h1 style="color: var(--secondary-color); font-size: 48px; font-family: Poppins;margin: 0px;">S L A</h1>
+            <h1 style="color: var(--secondary-color); font-size: 48px;margin: 0px;">S L A</h1>
             <div style="background-color: var(--secondary-color); width: 150px; height: 3px; margin-left: 30px;"></div>
           </div>
           
           <h4>Um salão planejado para oferecer todos os serviços voltados à beleza e estética, feminina e masculina.</h4>
         </div>
         <div class="div-custom-card" 
-          style="float: right; background-color: var(--secondary-color); box-shadow: -6px 9px 12px 0px var(--primary-color);">
+          style="float: right; background-color: var(--secondary-color);">
           <img style="border-radius: 33px;" src="img/salao.png" height="100%">
         </div>
       </div>
 
       <div class="div-linha" style="left: -100%;" id="l2">
         <div class="div-custom-card" 
-          style="float: left; background-color: var(--primary-color); box-shadow: -6px 9px 12px 0px var(--secondary-color);">
+          style="float: left; background-color: var(--primary-color);">
           <img style="border-radius: 33px;" src="img/corte.png" height="100%">
         </div>
         <div class="div-linha-text">
           <div style="display: flex; align-items: center;">
-            <h1 style="color: var(--primary-color); font-size: 48px; font-family: Poppins;margin: 0px;">Diversos Serviços</h1>
+            <h1 style="color: var(--primary-color); font-size: 48px;margin: 0px;">Diversos Serviços</h1>
             <div style="background-color: var(--primary-color); width: 150px; height: 3px; margin-left: 30px;"></div>
           </div>
           <h4>Corte de Cabelo, Tratamento de Pele, Tratamento e Pintura de Unhas...</h4>
@@ -169,9 +169,9 @@
         <div class="row">
           <?php
               //Cards::createCard("img Path", "Card Title", "Card Text", "Button Link", "Button Text");
-              Cards::createCard("img/corte.png", "Cortes e Penteados", "Descrição serviço", "#", "Agendar");
-              Cards::createCard("img/maquiagem.png", "Cortes e Penteados", "Descrição serviço", "#", "Agendar");
-              Cards::createCard("img/unha.png", "Pintura e Tratamento de Unhas", "Descrição serviço", "#", "Agendar");
+              Cards::createCard("img/corte.png", "Cortes e Penteados", "Descrição serviço", "#", "Agendar", "col-md");
+              Cards::createCard("img/maquiagem.png", "Cortes e Penteados", "Descrição serviço", "#", "Agendar", "col-md");
+              Cards::createCard("img/unha.png", "Pintura e Tratamento de Unhas", "Descrição serviço", "#", "Agendar", "col-md");
           ?>
         </div>
       </div>

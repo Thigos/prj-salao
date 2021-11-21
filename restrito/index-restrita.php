@@ -52,7 +52,7 @@
       <div class="div-top-main">
         <div class="div-top-img"> </div>
         <div class="div-top-text">
-          <h1 style="color: var(--secondary-color); font-size: 48px; font-family: Poppins-Medium;">Área do Funcionário</h1>
+          <h1 style="color: var(--secondary-color); font-size: 48px; font-weight: bold;">Área do Funcionário</h1>
           <h3>Cadastre serviços e adicione fotos na galeria</h3>
         </div>
       </div>

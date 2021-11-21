@@ -12,13 +12,16 @@
             <a class="nav-link" href="formServico.php">Cadastrar Serviços </a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="galeria-restrita.php">Galeria </a>
+            <a class="nav-link" href="galeria-restrita.php">Publicações </a>
         </li>
         <li class="nav-item active">
             <a class="nav-link" href="#">Agenda</a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="#">Clientes</a>
+            <a class="nav-link" href="cadUsuario.php">Usuários</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="cadCliente.php">Clientes</a>
         </li>
         <li class="nav-item active">
             <a class="nav-link" href="logout.php">Sair</a>
@@ -29,8 +32,8 @@
 
 <?php
     session_start();
-    if($_SESSION['login-session'] != 'adm'){
-    header("Location: ../index.php");
+    if($_SESSION['login-session'] == ''){
+        header("Location: ../index.php");
     
     }
 ?>

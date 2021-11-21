@@ -12,7 +12,7 @@
             <a class="nav-link" href="index.php#servicos">Serviços </a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="#">Galeria </a>
+            <a class="nav-link" href="#">Publicações </a>
         </li>
         <li class="nav-item active">
             <a class="nav-link" href="#">Chat</a>

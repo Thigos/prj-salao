@@ -8,28 +8,54 @@ html, body {
     height: 100%;
 }
 
-@font-face {
-    font-family: Poppins;
-    src: url(../fonts/Poppins-Light.ttf);
-}
 
 @font-face {
-    font-family: Poppins-Regular;
-    src: url(../fonts/Poppins-Regular.ttf);
+    font-family: SourceSansPro;
+    src: url(../fonts/SourceSansPro-Light.ttf);
 }
 
-@font-face {
-    font-family: Poppins-Medium;
-    src: url(../fonts/Poppins-Medium.ttf);
-}
-
-p, label, h1, h2, h3, h4,h5 {
-    font-family: Poppins-Regular, Arial,Tahoma,sans-serif;
+p, label, h1, h2, h3, h4,h5, a {
+    font-family: SourceSansPro,sans-serif;
     
 }
 
-a{
-    font-family: Poppins, Arial,Tahoma,sans-serif;
+.bt-cadastrar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 33px;
+    transition: 500ms;
+    bottom: 10px;
+    color: white;
+}
+
+.bt-cadastrar:hover{
+    transform: scale(1.05);
+}
+
+.bt-delete{
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    border: none;
+    border-radius: 33px;
+    transition: 500ms;
+    bottom: 10px;
+    color: white;
+}
+
+.bt-delete:hover{
+    transform: scale(1.05);
 }
 
 .custom-bt{
@@ -57,10 +83,19 @@ a{
 }
 
 .custom-navbar{
+    top: 0px;
     z-index: 1;
     height: 70px;
     background: rgba(255, 0, 60, 0);
     background: var(--gradient);
+}
+
+.card{
+    border-radius: 23px;
+}
+
+.card .card-img-top{
+    border-radius: 23px 23px 0px 0px;
 }
 
 footer{

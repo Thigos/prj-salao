@@ -139,6 +139,8 @@
         </div>
 
         <?php
+
+            // Mensagem de Usuário incorreto
             if(isset($_GET['auth'])){
                 if ($_GET['auth'] == "false"){
                     echo("<script>
@@ -149,6 +151,7 @@
                     </script>");
                 }
             }
+
         ?>
 
         <!--Footer-->
