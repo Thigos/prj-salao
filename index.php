@@ -168,10 +168,11 @@
         <!--Serviços Cards-->
         <div class="row">
           <?php
-              //Cards::createCard("img Path", "Card Title", "Card Text", "Button Link", "Button Text");
-              Cards::createCard("img/corte.png", "Cortes e Penteados", "Descrição serviço", "#", "Agendar", "col-md");
-              Cards::createCard("img/maquiagem.png", "Cortes e Penteados", "Descrição serviço", "#", "Agendar", "col-md");
-              Cards::createCard("img/unha.png", "Pintura e Tratamento de Unhas", "Descrição serviço", "#", "Agendar", "col-md");
+              $cards = new Cards();
+              //cards->createCard("img Path", "Card Title", "Card Text", "Button Link", "Button Text");
+              $cards->createCard("img/corte.png", "Cortes e Penteados", "Descrição serviço", "#", "Agendar", "col-md");
+              $cards->createCard("img/maquiagem.png", "Cortes e Penteados", "Descrição serviço", "#", "Agendar", "col-md");
+              $cards->createCard("img/unha.png", "Pintura e Tratamento de Unhas", "Descrição serviço", "#", "Agendar", "col-md");
           ?>
         </div>
       </div>
