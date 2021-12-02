@@ -6,24 +6,73 @@ class Servico{
 
     private $idServico;
     private $descServico;
+    private $textoServico;
+    private $fotoServico;
 
     public function getIdServico(){
         return $this->idServico;
     }
-    public function getDescServico(){
-        return $this->descServico;
-    }
     public function setIdServico($idServico){
         $this->idServico = $idServico;
+    }
+    public function getDescServico(){
+        return $this->descServico;
     }
     public function setDescServico($descServico){
         $this->descServico = $descServico;
     }
+    public function getTextoServico(){
+        return $this->textoServico;
+    }
+    public function setTextoServico($textoServico){
+        $this->textoServico = $textoServico;
+    }
+    public function getFotoServico(){
+        return $this->fotoServico;
+    }
+    public function setFotoServico($fotoServico){
+        $this->fotoServico = $fotoServico;
+    }
 
     public function cadastrar($servico){
         $con = Conexao::conectar();
-        $query = "INSERT INTO tbServico(descServico) 
-                    VALUES ('".$servico->getDescServico()."')";
-        $con->exec($query);
+        $stmt = $con->prepare("INSERT INTO tbServico(descServico, textoServico, fotoServico) 
+                    VALUES (?, ?, ?)");
+        $stmt->bindValue(1, $servico->getDescServico());
+        $stmt->bindValue(2, $servico->getTextoServico());
+        $stmt->bindValue(3, $servico->getFotoServico());
+        $stmt->execute();
+    }
+
+    public function atualizar($servico){
+        $con = Conexao::conectar();
+        $stmt = $con->prepare("UPDATE tbServico
+                                SET descServico = ?, 
+                                    textoServico = ?, 
+                                    fotoServico = ?
+                                WHERE idServico = ?");
+
+        $stmt->bindValue(1, $servico->getDescServico());
+        $stmt->bindValue(2, $servico->getTextoServico());
+        $stmt->bindValue(3, $servico->getFotoServico());
+        $stmt->bindValue(4, $servico->getIdServico());
+        $stmt->execute();
+
+    }
+
+    public function listar(){
+        $conexao = Conexao::conectar();
+        $querySelect = "SELECT idservico, descservico, textoservico, fotoservico FROM tbservico";
+        $resultado = $conexao->query($querySelect);
+        $lista = $resultado->fetchAll();
+        return $lista;   
+    }
+    public function deletar($servico){
+        $con = Conexao::conectar();
+        $stmt = $con->prepare("DELETE FROM tbServico
+                                WHERE idServico = ?");
+
+        $stmt->bindValue(1, $servico->getIdServico());
+        $stmt->execute();
     }
 }
